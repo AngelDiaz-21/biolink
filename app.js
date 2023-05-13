@@ -27,7 +27,7 @@ function init(){
     scene.add(light);
     //Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setSize(container.clientWidth, container.clientHeight - 10);
     renderer.setPixelRatio(window.devicePixelRatio);
 
     container.appendChild(renderer.domElement);
